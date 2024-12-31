@@ -1,5 +1,6 @@
 ﻿using CatG.Core.Containers;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace CatG.Core.Serialization;
 
@@ -16,6 +17,8 @@ public static class Serializer {
     }
 
     private static Dictionary<object, object> JsonToDictionary(string json) {
+        var rootObject = JsonConvert.DeserializeObject<JObject>(json);
+        
         
         throw new NotImplementedException();
     }
