@@ -4,7 +4,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CatGEditor.MainWindow"
-        Title="CatGEditor">
+        Title="CatGEditor"
+        Background="#202020"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome">
     <Panel Margin="40">
         <Button Content="매용" 
                 HorizontalAlignment="Left" VerticalAlignment="Top" />
