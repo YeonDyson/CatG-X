@@ -1,5 +1,7 @@
 ﻿using Avalonia;
 using System;
+using Projektanker.Icons.Avalonia;
+using Projektanker.Icons.Avalonia.MaterialDesign;
 
 namespace CatGEditor;
 
@@ -14,6 +16,8 @@ class Program {
     }
     
     public static AppBuilder BuildAvaloniaApp() {
+        IconProvider.Current.Register<MaterialDesignIconProvider>();
+        
         return AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
